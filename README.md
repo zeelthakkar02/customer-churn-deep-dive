@@ -24,3 +24,6 @@ Use SQL, Python, and Power BI to answer:
 - Power BI dashboard
 - Churn risk segments
 - Churn action playbook
+
+## Dataset
+This project uses a public SaaS churn dataset. The original dataset documentation is included in `data/raw/dataset_README.md`.
