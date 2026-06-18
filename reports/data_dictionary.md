@@ -74,3 +74,12 @@
 | preceding_downgrade_flag | Whether the account downgraded before churn |
 | is_reactivation | Whether this event is related to reactivation |
 | feedback_text | Customer feedback about churn |
+
+## Table Relationships
+
+- `accounts.account_id` connects to `subscriptions.account_id`
+- `accounts.account_id` connects to `support_tickets.account_id`
+- `accounts.account_id` connects to `churn_events.account_id`
+- `subscriptions.subscription_id` connects to `feature_usage.subscription_id`
+
+The main customer-level table is `accounts`. Product usage is connected through `subscriptions`.
